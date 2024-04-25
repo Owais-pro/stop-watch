@@ -33,3 +33,11 @@ function startWatch() {
 function StopWatch(){
     clearInterval(IntervalId);
 }
+
+
+function ResetWatch(){
+    clearInterval(IntervalId);
+    second.innerHTML = 0;
+    minute.innerHTML = 0;
+    hour.innerHTML = 0;
+}
