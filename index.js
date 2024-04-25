@@ -8,14 +8,14 @@ function startWatch() {
     let sec =0;
     let min =0;
     let hours =0;
-    let mili =0;
+    let ms =0;
 
     IntervalId = setInterval(function() {
 
-        mili += 10;
-        if(mili === 1000)
+        ms +=10;
+        if(ms === 1000)
         {
-            mili =0;
+            ms =0;
             sec += 1;
         }
         if(sec === 60)
@@ -32,8 +32,9 @@ function startWatch() {
         second.innerHTML = sec;
         minute.innerHTML = min;
         hour.innerHTML = hours;
+        miliSecond.innerHTML = ms;
         
-    }, 1000);
+    }, 10);
     
 }
 
@@ -47,4 +48,5 @@ function ResetWatch(){
     second.innerHTML = 0;
     minute.innerHTML = 0;
     hour.innerHTML = 0;
+    miliSecond.innerHTML = 0;
 }
