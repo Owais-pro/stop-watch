@@ -1,16 +1,23 @@
 const second = document.querySelector('#sec');
 const minute = document.querySelector('#min');
 const hour = document.querySelector('#hour');
+const miliSecond = document.querySelector('#mili')
 let IntervalId;
 
 function startWatch() {
     let sec =0;
     let min =0;
     let hours =0;
+    let mili =0;
 
     IntervalId = setInterval(function() {
 
-        sec += 1;
+        mili += 10;
+        if(mili === 1000)
+        {
+            mili =0;
+            sec += 1;
+        }
         if(sec === 60)
         {
             sec = 0;
