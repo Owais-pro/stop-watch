@@ -29,3 +29,7 @@ function startWatch() {
     }, 1000);
     
 }
+
+function StopWatch(){
+    clearInterval(IntervalId);
+}
