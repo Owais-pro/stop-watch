@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-block: 20px;
+    font-family:  Verdana;
+    color: goldenrod;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    margin-block: 50px;
+    color: rgba(255, 255, 255, 0.533)
+}
+.btn{
+    text-align: center;
+    
+}
+.time{
+    padding-inline: 5px;
+    color: goldenrod;
+}
+#button{
+    padding: 10px;
+    margin-inline: 8px;
+    border-inline: 4px solid rgb(224, 172, 41);
+    border-block:  4px solid rgb(206, 93, 93);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: medium;
+    color: goldenrod;
+    background-color: black;
+}
