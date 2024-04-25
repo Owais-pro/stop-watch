@@ -21,6 +21,10 @@ function startWatch() {
             min = 0;
             hours +=1;
         }
+
+        second.innerHTML = sec;
+        minute.innerHTML = min;
+        hour.innerHTML = hours;
         
     }, 1000);
     
