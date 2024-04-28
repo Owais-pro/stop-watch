@@ -18,7 +18,8 @@ p{
     font-weight: bold;
     font-size: larger;
     margin-block: 50px;
-    color: rgba(255, 255, 255, 0.533)
+    color: #ffffff;
+    align-items: center;
 }
 .btn{
     text-align: center;
@@ -27,6 +28,7 @@ p{
 .time{
     padding-inline: 5px;
     color: goldenrod;
+    align-items: center;
 }
 #button{
     padding: 10px;

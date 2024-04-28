@@ -1,7 +1,8 @@
 const second = document.querySelector('#sec');
 const minute = document.querySelector('#min');
 const hour = document.querySelector('#hour');
-const miliSecond = document.querySelector('#mili')
+const miliSecond = document.querySelector('#mili');
+const button = document.querySelector('.btn1');
 let IntervalId;
 
 function startWatch() {
@@ -33,6 +34,7 @@ function startWatch() {
         minute.innerHTML = min;
         hour.innerHTML = hours;
         miliSecond.innerHTML = ms;
+        button.disabled = true;
         
     }, 10);
     
@@ -40,6 +42,7 @@ function startWatch() {
 
 function StopWatch(){
     clearInterval(IntervalId);
+    button.disabled = false;
 }
 
 
@@ -49,4 +52,5 @@ function ResetWatch(){
     minute.innerHTML = 0;
     hour.innerHTML = 0;
     miliSecond.innerHTML = 0;
+    button.disabled = false;
 }
